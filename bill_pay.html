@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Electricity Bill Payment</h2>
+        <form action="#" method="post">
+            <!-- Account Information -->
+            <label for="account-number">Account Number:</label>
+            <input type="text" id="account-number" name="account-number" required>
+            
+            <label for="name-on-account">Name on Account:</label>
+            <input type="text" id="name-on-account" name="name-on-account" required>
+            
+            <!-- Billing Information -->
+            <label for="bill-amount">Bill Amount:</label>
+            <input type="text" id="bill-amount" name="bill-amount" required>
+            
+            <label for="bill-date">Bill Date:</label>
+            <input type="date" id="bill-date" name="bill-date" required>
+            
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date" required>
+            
+            <!-- Payment Information -->
+            <label for="payment-amount">Payment Amount:</label>
+            <input type="text" id="payment-amount" name="payment-amount" required>
+            
+            <label for="payment-date">Payment Date:</label>
+            <input type="date" id="payment-date" name="payment-date" required>
+            
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <!-- Add more payment methods as needed -->
+            </select>
+            
+            <!-- Additional Information -->
+            <label for="invoice-number">Invoice Number:</label>
+            <input type="text" id="invoice-number" name="invoice-number">
+            
+            <label for="reference-number">Reference Number:</label>
+            <input type="text" id="reference-number" name="reference-number">
+            
+            <label for="notes">Notes/Instructions:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+            
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
